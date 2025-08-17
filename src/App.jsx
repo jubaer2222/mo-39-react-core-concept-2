@@ -15,13 +15,13 @@ import Posts from './Posts'
 //   return res.json();
 //  } 
 
-const fetchPosts = async () => {
-  const res = await fetch('https://jsonplaceholder.typicode.com/posts');
-  return res.json();
-}
+// const fetchPosts = async () => {
+//   const res = await fetch('https://jsonplaceholder.typicode.com/posts');
+//   return res.json();
+// }
 
 function App() {
-  const postsPromise = fetchPosts();
+  // const postsPromise = fetchPosts();
   // const friendsPromise = fetchFriends();
 
   function handleClick() {
@@ -41,9 +41,9 @@ function App() {
     <>
 
       <h1>Vite + React</h1>
-      <Suspense fallback={<h3>Posts are loading...</h3>}>
+      {/* <Suspense fallback={<h3>Posts are loading...</h3>}>
         <Posts postsPromise={postsPromise}></Posts>
-      </Suspense>
+      </Suspense> */}
 
       {/* 
       <Suspense fallback={<h3>Friends are coming for the treat...</h3>}>

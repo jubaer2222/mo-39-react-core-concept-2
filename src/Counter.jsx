@@ -9,6 +9,15 @@ export default function Counter(){
         setCount(newCount);
     }
 
+    const handleRemove = () => {
+    setCount(count - 1);
+  };
+
+  const handleReset = () => {
+    setCount(0);
+  };
+
+
     const counterStyle ={
         border: "2px solid yellow"
     }
@@ -16,6 +25,8 @@ export default function Counter(){
         <div style={counterStyle}>
             <h3>Count: {count}</h3>
             <button onClick={handleAdd}>Add</button>
+             <button onClick={handleRemove}>Remove</button>
+            <button onClick={handleReset}>Reset</button>
         </div>
     )
 }
