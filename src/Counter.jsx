@@ -10,7 +10,9 @@ export default function Counter(){
     }
 
     const handleRemove = () => {
+     if (count > 0) {
     setCount(count - 1);
+  }
   };
 
   const handleReset = () => {
